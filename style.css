@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    /* background: url("img/texture-paper.png"); */
     background-size: 280px 280px;
 }
 
@@ -811,7 +811,9 @@ h4 {
     color: #364577!important;
     border-color: #364577!important;
 }
-
+ .font-black{
+    color: #000000;
+ }
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }
