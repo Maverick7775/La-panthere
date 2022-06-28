@@ -285,6 +285,10 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 36px;
+    background-color: #333333;
+    border-radius: 15px;
+    padding: 5px;
+
 }
 
 .navbar {
@@ -1042,7 +1046,10 @@ h4 {
         padding-right: 0;
     }
     p{
-        font-size: 12px;
+        font-size: 13px;
+    }
+    .icon-md {
+        font-size: 32px!important;
     }
 }
 
