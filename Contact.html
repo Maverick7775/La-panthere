@@ -11,13 +11,27 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 
-
+	<script defer src="./js/jquery-2.1.0.js"></script>
+	<script defer src="./js/bootstrap.min.js"></script>
+	<script defer src="./js/blocs.min.js"></script>
+	<script defer src="./js/jqBootstrapValidation.js"></script>
+	<script defer src="./js/formHandler.js"></script>
 
 
 	<title>Contact</title>
 
 
 	<!-- Analytics -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VSNFDK299T"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VSNFDK299T');
+	</script>
 
 	<!-- Analytics END -->
 
@@ -28,7 +42,7 @@
 	<div class="page-container">
 
 		<!-- bloc-0 -->
-		<div class="bloc bgc-white l-bloc " id="bloc-0">
+		<header class="bloc bgc-white l-bloc " id="bloc-0">
 			<div class="container bloc-sm">
 				<nav class="navbar row">
 					<div class="navbar-header">
@@ -53,77 +67,82 @@
 					</div>
 				</nav>
 			</div>
-		</div>
+		</header>
 		<!-- bloc-0 END -->
 
-		<!-- bloc-6 -->
-		<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-			<div class="container bloc-lg">
-				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="text-center hero-bloc-text">
-							Parlons web design !
-						</h1>
-						<p class="text-center mg-lg tight-width-whitespace font-black">
-							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- bloc-6 END -->
+		<main>
 
-		<!-- bloc-7 -->
-		<div class="bloc bgc-white l-bloc" id="bloc-7">
-			<div class="container bloc-lg">
-				<div class="row">
-					<div class="col-sm-6">
-						<form id="form_1" novalidate data-success-msg="Your message has been sent."
-							data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-							<div class="form-group">
-								<label for="name">
-									Nom
-								</label>
-								<input id="name" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<label for="email">
-									Adresse email
-								</label>
-								<input id="email" class="form-control" type="email" required />
-							</div>
-							<div class="form-group">
-								<label for="input_504">
-									Comment nous avez-vous connu ?
-								</label>
-								<input class="form-control" type="email" required id="input_504" />
-							</div>
-							<div class="form-group">
-								<label for="message">
-									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-								</label><textarea id="message" class="form-control" rows="4" cols="50"
-									required></textarea>
-							</div>
-							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-								type="submit">
-								Envoyer
-							</button>
-						</form>
-					</div>
-					<div class="col-sm-6">
-						<p>
-							contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi
-							au vendredi<br>
-						</p>
-						<!-- <iframe id="map"
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.083137365211!2d4.8279786154411495!3d45.7695240791058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1655801430025!5m2!1sfr!2sfr"
-							width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+			<!-- bloc-6 -->
+			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+				id="bloc-6">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="text-center hero-bloc-text">
+								Parlons web design !
+							</h1>
+							<p class="text-center mg-lg tight-width-whitespace font-black">
+								Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+								Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<!-- bloc-6 END -->
+
+			<!-- bloc-7 -->
+			<div class="bloc bgc-white l-bloc" id="bloc-7">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-6">
+							<form id="form_1" novalidate data-success-msg="Your message has been sent."
+								data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+								<div class="form-group">
+									<label for="name">
+										Nom
+									</label>
+									<input id="name" class="form-control" required />
+								</div>
+								<div class="form-group">
+									<label for="email">
+										Adresse email
+									</label>
+									<input id="email" class="form-control" type="email" required />
+								</div>
+								<div class="form-group">
+									<label for="input_504">
+										Comment nous avez-vous connu ?
+									</label>
+									<input class="form-control" type="email" required id="input_504" />
+								</div>
+								<div class="form-group">
+									<label for="message">
+										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+									</label><textarea id="message" class="form-control" rows="4" cols="50"
+										required></textarea>
+								</div>
+								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+									type="submit">
+									Envoyer
+								</button>
+							</form>
+						</div>
+						<div class="col-sm-6">
+							<p>
+								contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du
+								lundi
+								au vendredi<br>
+							</p>
+							<iframe id="map"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.083137365211!2d4.8279786154411495!3d45.7695240791058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1655801430025!5m2!1sfr!2sfr"
+								width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 		<!-- bloc-7 END -->
 
 		<!-- ScrollToTop Button -->
@@ -133,7 +152,7 @@
 
 
 		<!-- Footer - bloc-8 -->
-		<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
@@ -143,25 +162,29 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="https://twitter.com/?lang=fr" aria-hidden="true"><span
+									<a class="social" href="https://twitter.com/?lang=fr"
+										aria-label="Twitter de l'agence La Panthère"><span
 											class="fa fa-twitter icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="https://fr-fr.facebook.com/" aria-hidden="true"><span
+									<a class="social" href="https://fr-fr.facebook.com/"
+										aria-label="Facebook de l'agence La Panthère"><span
 											class="fa fa-facebook icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="https://dribbble.com/" aria-hidden="true"><span
+									<a class="social" href="https://dribbble.com/"
+										aria-label="Dribble de l'agence La Panthère"><span
 											class="fa fa-dribbble icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="https://www.instagram.com/?hl=fr" aria-hidden="true"><span
+									<a class="social" href="https://www.instagram.com/?hl=fr"
+										aria-label="Instagram de l'agence La Panthère"><span
 											class="fa fa-instagram icon-md"></span></a>
 								</div>
 							</div>
@@ -169,7 +192,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
 		<!-- Footer - bloc-8 END -->
 
 	</div>
@@ -178,10 +201,6 @@
 
 </body>
 
-<script src="./js/jquery-2.1.0.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/blocs.min.js"></script>
-<script src="./js/jqBootstrapValidation.js"></script>
-<script src="./js/formHandler.js"></script>
+
 
 </html>
