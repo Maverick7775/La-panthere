@@ -1059,6 +1059,9 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+    iframe{
+        padding: 5px;
+    }
 }
 
 .citation{
