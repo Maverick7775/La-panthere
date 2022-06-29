@@ -746,8 +746,9 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
-    width: 100%;
+    /* margin-bottom: 24px; */
+    margin: auto;
+    /* width: 100%; */
 }
 
 .portfolio-row {
@@ -1067,4 +1068,9 @@ h4 {
 
 .form-control:focus{
     background-color: #ECEBEB;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
 }
