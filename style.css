@@ -313,6 +313,8 @@ a:hover {
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
+    width: 217px;
+    height: 40px;
 }
 
 .nav-center .navbar-brand img {
@@ -978,8 +980,8 @@ h4 {
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
     }
+
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
@@ -1041,6 +1043,9 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    #mail{
+        padding-left: 10px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1082,6 +1087,7 @@ h4 {
 #mail{
     color: blue;
     text-decoration: underline;
+    width: fit-content;
 }
 iframe{
      width: 100%;
