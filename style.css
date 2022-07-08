@@ -32,10 +32,11 @@ a:hover {
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    
     position: relative;
 }
 
@@ -66,10 +67,10 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
+    background-size: auto !important;
     -webkit-background-size: auto !important;
     -moz-background-size: auto !important;
     -o-background-size: auto !important;
-    background-size: auto !important;
 }
 
 .bg-repeat {
@@ -829,9 +830,6 @@ h3 {
     background-image: url("img/dots-bg.png");
 }
 
-/* .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}  */
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.webp");
